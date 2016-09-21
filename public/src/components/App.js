@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+import Home from "./home"
 
 class App extends Component {
   render() {
     return (
-        <h1>This is a react div container !!!</h1>
+        <div>
+        <Home/>
+        </div>
     )
   }
 }
