@@ -2200,7 +2200,6 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
-	'strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -2257,7 +2256,7 @@ webpackJsonp([1],[
 	  getInitialState: function getInitialState() {
 	    return {
 	      isClicked: true,
-	      imageArray: ["1.jpg", "home.jpg", "4.jpg", "6.jpg"]
+	      imageArray: ["1.jpg", "3.jpg", "4.jpg", "6.jpg"]
 	    };
 	  },
 
@@ -2275,77 +2274,71 @@ webpackJsonp([1],[
 	var Navgation = _wrapComponent("_component2")(_react3.default.createClass({
 	  displayName: "Navgation",
 	  render: function render() {
+
 	    return _react3.default.createElement(
 	      "div",
-	      null,
+	      { className: "navbar row home-head  nav-pills" },
 	      _react3.default.createElement(
 	        "div",
-	        { className: "navbar" },
+	        { className: "col-lg-2 col-md-offset-1 home-head-img" },
+	        _react3.default.createElement("img", { src: "src/image/flower.png", alt: "logo" }),
+	        "暖小窝"
+	      ),
+	      _react3.default.createElement(
+	        "ul",
+	        { className: " col-lg-5 col-md-offset-3 nav nav-pills navbar-right home-head-right" },
 	        _react3.default.createElement(
-	          "ul",
-	          { className: "nav nav-pills navbar-right" },
+	          "li",
+	          null,
 	          _react3.default.createElement(
-	            "li",
-	            { className: "active" },
-	            _react3.default.createElement(
-	              "a",
-	              { href: "#" },
-	              "首页"
-	            )
-	          ),
+	            "a",
+	            { href: "#" },
+	            "首页"
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "li",
+	          null,
 	          _react3.default.createElement(
-	            "li",
-	            null,
-	            _react3.default.createElement(
-	              "a",
-	              { href: "#" },
-	              "暖窝窝"
-	            )
-	          ),
+	            "a",
+	            { href: "#" },
+	            "暖窝窝"
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "li",
+	          null,
 	          _react3.default.createElement(
-	            "li",
-	            null,
-	            _react3.default.createElement(
-	              "a",
-	              { href: "#" },
-	              "牵小手"
-	            )
-	          ),
+	            "a",
+	            { href: "#" },
+	            "牵小手"
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "li",
+	          null,
 	          _react3.default.createElement(
-	            "li",
-	            null,
-	            _react3.default.createElement(
-	              "a",
-	              { href: "#" },
-	              "情人湖"
-	            )
-	          ),
+	            "a",
+	            { href: "#" },
+	            "情人湖"
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "li",
+	          null,
 	          _react3.default.createElement(
-	            "li",
-	            null,
-	            _react3.default.createElement(
-	              "a",
-	              { href: "./components/Login" },
-	              "登录"
-	            )
-	          ),
+	            "a",
+	            { href: "./components/Login" },
+	            "个人中心"
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "li",
+	          null,
 	          _react3.default.createElement(
-	            "li",
-	            null,
-	            _react3.default.createElement(
-	              "a",
-	              { href: "#" },
-	              "注册"
-	            )
-	          ),
-	          _react3.default.createElement(
-	            "li",
-	            null,
-	            _react3.default.createElement(
-	              "a",
-	              { href: "#" },
-	              "个人中心"
-	            )
+	            "a",
+	            { href: "#" },
+	            "退出"
 	          )
 	        )
 	      )
@@ -2358,68 +2351,11 @@ webpackJsonp([1],[
 	  render: function render() {
 	    return _react3.default.createElement(
 	      "div",
-	      { id: "carousel-example-generic", className: "carousel slide", "data-ride": "carousel" },
-	      _react3.default.createElement(
-	        "ol",
-	        { className: "carousel-indicators", style: { zIndex: 1 } },
-	        _react3.default.createElement("li", { "data-target": "#carousel-example-generic", "data-slide-to": "0", className: "active" }),
-	        _react3.default.createElement("li", { "data-target": "#carousel-example-generic", "data-slide-to": "1" }),
-	        _react3.default.createElement("li", { "data-target": "#carousel-example-generic", "data-slide-to": "2" }),
-	        _react3.default.createElement("li", { "data-target": "#carousel-example-generic", "data-slide-to": "3" }),
-	        _react3.default.createElement("li", { "data-target": "#carousel-example-generic", "data-slide-to": "4" })
-	      ),
+	      { id: "carousel-example-generic", className: "carousel slide container", "data-ride": "carousel" },
 	      _react3.default.createElement(
 	        "div",
-	        { className: "carousel-inner", role: "listbox" },
-	        _react3.default.createElement(
-	          "div",
-	          { className: "item active img-rounded" },
-	          _react3.default.createElement(
-	            "div",
-	            { className: "my-img" },
-	            _react3.default.createElement("img", { src: "../src/image/1.png", alt: "..." })
-	          )
-	        ),
-	        this.props.onChange.map(function (image, index) {
-	          var path = "../src/image/";
-	          return _react3.default.createElement(
-	            "div",
-	            { className: "item img-rounded", key: index },
-	            _react3.default.createElement(
-	              "div",
-	              { className: "my-img" },
-	              _react3.default.createElement("img", { src: path + image, alt: "..." })
-	            )
-	          );
-	        })
-	      ),
-	      _react3.default.createElement(
-	        "a",
-	        { className: "left carousel-control", href: "#carousel-example-generic", role: "button", "data-slide": "prev" },
-	        _react3.default.createElement(
-	          "span",
-	          { className: "glyphicon glyphicon-chevron-left", "aria-hidden": "true" },
-	          " "
-	        ),
-	        _react3.default.createElement(
-	          "span",
-	          { className: "sr-only" },
-	          "Previous"
-	        )
-	      ),
-	      _react3.default.createElement(
-	        "a",
-	        { className: "right carousel-control", href: "#carousel-example-generic", role: "button", "data-slide": "next" },
-	        _react3.default.createElement(
-	          "span",
-	          { className: "glyphicon glyphicon-chevron-right", "aria-hidden": "true" },
-	          " "
-	        ),
-	        _react3.default.createElement(
-	          "span",
-	          { className: "sr-only" },
-	          "Next"
-	        )
+	        { className: "my-img" },
+	        _react3.default.createElement("img", { src: "../src/image/11.jpg", alt: "..." })
 	      )
 	    );
 	  }
@@ -2430,49 +2366,37 @@ webpackJsonp([1],[
 	  render: function render() {
 	    return _react3.default.createElement(
 	      "div",
-	      null,
+	      { className: "home-footer" },
 	      _react3.default.createElement(
 	        "div",
-	        { className: "navbar" },
+	        { className: "row home-footer-last" },
 	        _react3.default.createElement(
-	          "ul",
-	          { className: "nav nav-pills" },
-	          _react3.default.createElement(
-	            "li",
-	            null,
-	            _react3.default.createElement(
-	              "a",
-	              { href: "#" },
-	              "关于我们"
-	            )
-	          ),
-	          _react3.default.createElement(
-	            "li",
-	            null,
-	            _react3.default.createElement(
-	              "a",
-	              { href: "#" },
-	              "友情链接"
-	            )
-	          ),
-	          _react3.default.createElement(
-	            "li",
-	            null,
-	            _react3.default.createElement(
-	              "a",
-	              { href: "#" },
-	              "商务合作"
-	            )
-	          ),
-	          _react3.default.createElement(
-	            "li",
-	            null,
-	            _react3.default.createElement(
-	              "a",
-	              { href: "#" },
-	              "欢迎骚扰"
-	            )
-	          )
+	          "div",
+	          { className: "col-lg-2 col-md-offset-1" },
+	          "下载地址",
+	          _react3.default.createElement("br", null),
+	          _react3.default.createElement("img", { src: "src/image/13.png", alt: "微信公众号" })
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          { className: "col-lg-2 col-md-offset-1" },
+	          "博客地址",
+	          _react3.default.createElement("br", null),
+	          "http://blog.csdn.net/ting119"
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          { className: "col-lg-2 col-md-offset-1" },
+	          "客服热线",
+	          _react3.default.createElement("br", null),
+	          "1234567"
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          { className: "col-lg-3" },
+	          "公众号",
+	          _react3.default.createElement("br", null),
+	          _react3.default.createElement("img", { src: "src/image/13.png", alt: "微信公众号" })
 	        )
 	      ),
 	      _react3.default.createElement(
@@ -2481,7 +2405,7 @@ webpackJsonp([1],[
 	        _react3.default.createElement(
 	          "h5",
 	          null,
-	          "2016.9.22   @All Rights Reserved"
+	          "2016.9.22 @All Rights Reserved"
 	        )
 	      )
 	    );

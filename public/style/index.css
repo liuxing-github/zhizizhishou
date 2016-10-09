@@ -1,16 +1,44 @@
 body {
   overflow-x: hidden;
-  /*background-image: url("../src/image/7.jpg");*/
-  background-color: lavenderblush;
+  /*background-color: lavenderblush;*/
+  background-color:#ede7e1;
   }
 
 .my-img {
-  height: 480px;
+  height: 400px;
 }
 
 .my-img img {
   width: 100%;
   height: 100%;
+}
+.home-head{
+  width: auto;
+  height: 100px;
+  /*background-color: #ffffff;*/
+  background-color:#ede7e1;;
+}
+.home-head-img{
+  margin-top: 15px;
+  text-shadow: black 5px 3px 3px;
+  font-size: 30px;
+  font-style: inherit;
+  color: #000000;
+}
+.home-head-right{
+  margin-top: 15px;
+  font-style: italic;
+  font-size: 15px;
+}
+.home-footer{
+  background-color: #dddddd;
+  width: auto;
+  margin-top: 20px;
+  height: 130px;
+}
+.home-footer-last{
+  margin-top: 5px;
+  font-size: 20px;
 }
 
 

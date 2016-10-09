@@ -1,12 +1,11 @@
-'strict'
-import React, { Component } from "react";
+import React, {Component} from "react";
 const Home = React.createClass({
-    getInitialState: function () {
-        return {
-            isClicked: true,
-            imageArray: ["1.jpg", "home.jpg", "4.jpg", "6.jpg"]
-        }
-    },
+  getInitialState: function () {
+    return {
+      isClicked: true,
+      imageArray: ["1.jpg", "3.jpg", "4.jpg", "6.jpg"]
+    }
+  },
 
   render(){
     return (
@@ -21,74 +20,51 @@ const Home = React.createClass({
 
 const Navgation = React.createClass({
   render(){
+
     return (
-        <div>
-        <div className="navbar">
-            <ul className="nav nav-pills navbar-right">
-              <li className="active"><a href="#">首页</a></li>
-              <li><a href="#">暖窝窝</a></li>
-              <li><a href="#">牵小手</a></li>
-              <li><a href="#">情人湖</a></li>
-                <li><a href="./components/Login">登录</a></li>
-              <li><a href="#">注册</a></li>
-              <li><a href="#">个人中心</a></li>
-            </ul>
-        </div>
-        </div>
+
+      <div className="navbar row home-head  nav-pills">
+
+        <div className="col-lg-2 col-md-offset-1 home-head-img"><img src={"src/image/flower.png"} alt="logo"/>暖小窝</div>
+
+        <ul className=" col-lg-5 col-md-offset-3 nav nav-pills navbar-right home-head-right">
+          <li><a href="#">首页</a></li>
+          <li><a href="#">暖窝窝</a></li>
+          <li><a href="#">牵小手</a></li>
+          <li><a href="#">情人湖</a></li>
+          <li><a href="./components/Login">个人中心</a></li>
+          <li><a href="#">退出</a></li>
+
+        </ul>
+      </div>
     )
   }
 })
 
+
 const Carousel = React.createClass({
   render(){
-    return <div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
-              <ol className="carousel-indicators" style={{zIndex:1}}>
-              <li data-target="#carousel-example-generic" data-slide-to="0" className="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-              </ol>
-              <div className="carousel-inner" role="listbox">
-              <div className="item active img-rounded">
-              <div className="my-img"><img src= {"../src/image/1.png"} alt="..."/></div>
-          </div>
-
-          {this.props.onChange.map((image, index)=>{
-              const path= "../src/image/";
-              return <div className="item img-rounded" key={index}>
-                  <div className="my-img"><img src= {path+image} alt="..."/></div>
-              </div>
-          })}
-         </div>
-      <a className="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span className="glyphicon glyphicon-chevron-left" aria-hidden="true"> </span>
-          <span className="sr-only">Previous</span>
-      </a>
-      <a className="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span className="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span>
-          <span className="sr-only">Next</span>
-      </a>
-      </div>
+    return <div id="carousel-example-generic" className="carousel slide container" data-ride="carousel">
+      <div className="my-img"><img src={"../src/image/11.jpg"} alt="..."/></div>
+    </div>
   }
 });
 
 const Footer = React.createClass({
-    render(){
+  render(){
     return (
-        <div>
-        <div className="navbar">
-          <ul className="nav nav-pills">
-          <li><a href="#">关于我们</a></li>
-          <li><a href="#">友情链接</a></li>
-          <li><a href="#">商务合作</a></li>
-          <li><a href="#">欢迎骚扰</a></li>
-          </ul>
+      <div className="home-footer">
+        <div className="row home-footer-last">
+          <div className="col-lg-2 col-md-offset-1">下载地址<br/><img src={"src/image/13.png"} alt="微信公众号"/></div>
+          <div className="col-lg-2 col-md-offset-1">博客地址<br/>http://blog.csdn.net/ting119</div>
+          <div className="col-lg-2 col-md-offset-1">客服热线<br/>1234567</div>
+          <div className="col-lg-3">公众号<br/><img src={"src/image/13.png"} alt="微信公众号"/></div>
         </div>
+
         <div className="text-center">
-          <h5>2016.9.22   @All Rights Reserved</h5>
+          <h5>2016.9.22 @All Rights Reserved</h5>
         </div>
-        </div>
+      </div>
     )
   }
 })
