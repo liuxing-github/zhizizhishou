@@ -55,7 +55,7 @@ const Content = React.createClass({
                 <li><a href="#"><img src="../src/image/book4.jpg"></img></a></li>
                 <li><a href="#"><img src="../src/image/book5.jpg"></img></a></li>
                 <li><a href="#"><img src="../src/image/book6.jpg"></img></a></li>
-                <li><a href="#"><img src="../src/image/book1.jpg"></img></a></li>
+                <li><a href="#"><img src="../src/image/book2.jpg"></img></a></li>
                 <li><a href="#"><img src="../src/image/book2.jpg"></img></a></li>
               </ul>
             </div>
